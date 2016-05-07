@@ -1,0 +1,496 @@
+﻿@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+/******************** 초기화 ********************/
+*{margin:0;padding:0;}
+li{list-style-type:none;}
+img{border:none;}
+a{border:0;}
+a:link, a:visited{text-decoration:none;  color:#777;}
+a:hover, a:focus{text-decoration:none; color:#777;}
+body{margin:0; padding:0; font-size:12px; overflow-x:hidden; font-family: "Nanum Gothic", dotum,"돋움",sans-serif;}
+body, header, nav, section, footer, #visualWrap ,#wrap{margin:0;padding:0;}
+h2{position:absolute; left:-9999px; font-size:1px; overflow:hidden; width:1px; height:1px; line-height:1px;}
+#wrap{max-width:1280px;}
+
+/******************** header ********************/
+
+header{width:100%; height:77px; margin:0 auto; border-bottom:1px solid #ddd; z-index:1000; position:relative; box-shadow: 0 4px 5px -2px gray;}
+#header{width:1000px; height:77px; margin:0 auto; }
+#header h1{width:240px; height:31px; float:left; padding:23px 10px; }
+
+/***************** header + nav *****************/
+
+nav{width:740px; height:77px; float:left;}
+nav span{display:none;}
+nav #parent li{float:left; position:relative; margin-left:50px;}
+nav #parent li a{width:135px; height:17px; display:inline-block; padding:30px 0; text-align:center; }
+nav #parent li .subGnb{position:absolute; display:none; width:135px; padding:6px 0 18px; font-size:13px; font-weight:700; background-color:#fff; border-top:1px solid #ddd; border-left:1px solid #c2c2c2; border-right:1px solid #c2c2c2; border-bottom:1px solid #d51113; z-index:2000; font-family:"Nanum Gothic";}
+nav #parent li .subGnb li{ margin-left:0;}
+nav #parent li .subGnb li a{ color:#333; text-align:left; width:118px; padding:0 0 0 17px; height:28px; line-height:28px; font-family:"NanumGothic"; }
+nav #parent li .subGnb li a:hover{background:#666; color:#fff; }
+nav #parent:after{content:""; display:block; clear:both;}
+nav #m_parent{display:none;}
+@-moz-document url-prefix() {
+	nav #parent li .subGnb li a, #areaWrap #area li a strong, #boardWrap #news #newsText a strong, #notic #noticText a strong{font-weight:normal;}	
+}
+
+/******************** visual ********************/
+
+#visualWrap{max-width:100%; max-height:388px; margin:0 auto; overflow:hidden; position:relative;}
+#visual{ width:400%; height:388px;}
+#visual li{width:25%; height:100%;}
+#visual li.visualImg{float:left;}
+#visual li img{width:100%; height:100%;}
+#visual li:after{content:""; display:block; clear:both;}
+
+#vcontroll{position:absolute; top:160px; left:100px; width:84%; overflow:hidden;}
+#vcontroll #leftbtn{float:left; cursor:pointer;}
+#vcontroll #rightbtn{float:right; cursor:pointer;}
+#vcontroll2{position:absolute; top:300px; left:200px; width:90%; overflow:hidden;}
+#vcontroll2 ul li{display:inline-block;}
+
+/******************** content ********************/
+
+section{width:100%; height:530px; }
+#content{width:1000px; height:530px; margin:0px auto; clear:both;}
+#content div{float:left; overflow:hidden;}
+
+/************** content + recordTop **************/
+
+#recordWrap{width:670px; height:330px; background-color:#252424;/*border:1px solid #252424;*/}
+#recordTop{width:670px; height:20px; overflow:hidden; padding:30px 30px;}
+#recordTop h3{width:100px;float:left;}
+#recordTop p{width:510px; margin-top:-5px; text-align:right;float:left;}
+#recordTop p img{padding-right:5px; cursor:pointer;}
+
+/************** content + recordCon **************/
+
+#recordCon{width:610px; height:230px; margin:10px 0 0 30px; overflow:hidden;}
+#recordFilm{width:1450px;}
+#recordCon li{width:190px; height:187px; float:left; padding-right:17px; text-align:left;}
+#recordCon li span{color:#888;}
+#recordCon li p.recimg{width:190px; height:150px; padding-bottom:8px;}
+#recordCon li p a img{width:100%; height:100%;}
+#recordCon li p a.recorda:link, a.recorda:visited{color:#fff; }
+#recordCon li p{margin:5px 0 3px 0;}
+.lirecimg:hover{opacity:0.7;}
+
+/************** content + areaWrap **************/
+
+#areaWrap{width:330px; height:330px;}
+#areaTop{width:270px; height:20px; padding:30px 30px;background-color:#f4f4f4;border-bottom:1px solid #ccc;}
+#areaWrap #area ul{width:100%;}
+#areaWrap #area ul li{width:310px; height:82px; padding-left:20px;}
+#areaWrap #area li{border-bottom:1px solid #ccc;}
+
+#areaWrap #area li a span.areaimg{width:54px; height:80px; overflow:hidden; float:left;}
+#areaWrap #area li a span.areaimg img.devel{margin-top:-5px;}
+#areaWrap #area li a span.areaimg img.cm{margin-top:-100px;}
+#areaWrap #area li a span.areaimg img.assets{margin-top:-200px;}
+
+#areaWrap #area li a span.areatext{width:240px; height:65px; overflow:hidden; float:left; color: #777; padding-top:14px; padding-left:15px; line-height:17px;}
+#areaWrap #area li a span.areatext_cm{width:240px; height:70px; overflow:hidden; float:left; color: #777; padding-top:6px; padding-left:15px; line-height:17px;}
+#areaWrap #area li a span.areaspan{display:block; width:200px;}
+#areaWrap #area li a strong{display:block; font-size:14px; color: #000; padding-bottom:4px;}
+
+/************** content + boardWrap **************/
+
+#boardWrap{width:669px;height:200px; border-left: 1px solid #ddd;}
+#boardWrap #boardHeader{width:669px; height:46px; overflow:hidden;}
+#boardWrap h3{float:left; cursor:pointer;}
+#boardWrap #boardHeader p{width:406px; height:44px; float:left; border-bottom: 1px solid #ddd; background-color:#F4F4F4; font-size:12px; font-family: 'Myriad Pro'; line-height:44px; text-align:right; overflow:hidden;}
+#boardWrap #boardHeader img.bumore{padding:0 10px;}
+
+#boardWrap #news, #notic{width:620px; height:110px; padding:22px 22px;}
+#boardWrap #news #newsImg, #notic #noticImg{padding-right:25px;}
+#boardWrap #news img, #notic img{border:1px solid #ddd;}
+#boardWrap #news #newsText, #notic #noticText{line-height:20px;}
+#boardWrap #news #newsText ul li, #notic #noticText ul li{padding:7.5px 0;}
+#boardWrap #news #newsText a.newsTitle:link, a.newsTitle:visited, #notic #noticText a.noticTitle:link, a.noticTitle:visited{color: #333; font-weight: bold;}
+#boardWrap #news #newsText a.subText:link, a.subText:visited, #notic #noticText a.subText:link, a.subText:visited{color: #777;}
+
+/************** content + brochureWrap **************/
+
+#brochureWrap{width:329px; height:200px; background-color:#C8171E;  background-image:url("../img/main/bro_bar.png"); background-repeat:no-repeat; background-position:center center; float:left; text-align:center; overflow:hidden;}
+#brochure ul{width:100%; }
+#brochure ul li:first-child{width:165px;border:none; }
+#brochure ul li{width:164px; float:left; transform:scale(1);  -moz-transform:scale(1); transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out;}
+#brochure ul li:hover{-webkit-transform:scale(1.1); -moz-transform:scale(1.1); transform:scale(1.1);}
+#brochure ul li a{height:145px; line-height:15px; color:#fff; display:block; color:#fff; padding:55px 0 0;}
+#brochure img{padding-bottom:9px;}
+
+/******************** footer ********************/
+
+footer{width:100%; height:120px;  clear:both;}
+#footerWrap{background-color:#E9E9E9;}
+#footer{width:980px; height:90px; margin:0 auto; background-color:#E9E9E9; font-size:12px; padding-top:30px;}
+#fText{width:830px; height:100%; float:left;}
+#fText #footerMenu{padding-bottom:15px;}
+#fText #footerMenu a{display:inline; padding:0 5px;}
+#fText #footerMenu a:first-child {padding-left:0;}
+#fText #footerMenu img.footerbar{padding-bottom:2px;}
+#fText #footerText{color:#747474;line-height:18px;}
+#fSelect{width:150px; height:100%; float:left;}
+#fSelect #familySelet, #member #memberSelect{width:150px; border:1px solid #ddd; color:#747474; height:28px; margin-top:5px;}
+
+#skipNav{width:100%; position:absolute; /*relative로 설정하면 아래 컨텐츠들을 밀어버림 공간을 차지한다.*/ top:-30px; /*탭키를 숨겨놓기 위해!*/z-index:10000;}
+#skipNav a {position:absolute; display:block; width:100% ; color:#333; background-color:#fff; text-align:center; line-height:30px;}
+#skipNav a:focus {top:30px;}
+
+#vcontroll2 ul li a span{display:none;}
+
+/*태블릿pc 버전*/
+@media all and (min-width:768px) and (max-width:1023px){
+
+	/*################# header #################*/
+
+	header{width:100%; height:154px;}
+	#header{width:100%; height:100%; text-align:center;}
+	#header h1{width:100%;}
+
+	/*################# header + nav #################*/
+
+	nav{width:100%;}
+	nav #parent{width:80%; margin:0 auto;}
+	nav #parent li{width:20%; margin-left:4%;}
+	nav #parent li a{width:100%; }
+	nav #parent li a{width:50%; height:17px;}
+	nav #parent li .subGnb{position:absolute; left:-5%;}
+	nav #parent li .subGnb li{width:100%; clear:both; margin:0;}
+	nav #parent li .subGnb li a{ color:#333; text-align:left; width:118px;  padding:0 0 0 17px; height:28px; line-height:28px;}
+
+	/*################# visual #################*/
+
+	section{width:100%; height:100%; }
+	#content{max-width:768px; height:100%; margin:0px auto;}
+	#content div{float:left; overflow:hidden;}
+
+	#visualWrap{max-width:100%; height:388px; margin:0 auto; overflow:hidden; position:relative;}
+	#visual{width:400%; height:388px; margin:0 auto;}
+	#visual li{width:25%; height:100%; overflow:hidden;}
+	#visual li.visualImg{float:left;}
+	#visual li img{width:100%; height:100%;}
+	#visual li:after{content:""; display:block; clear:both;}
+
+	#vcontroll{position:absolute; top:160px; left:55px; width:87%; overflow:hidden;}
+	#vcontroll #leftbtn{float:left;}
+	#vcontroll #rightbtn{float:right;}
+
+	#vcontroll2{position:absolute; top:300px; left:200px; width:90%; overflow:hidden;}
+
+	/*################# content + recordTop #################*/
+
+	#recordWrap{width:100%; height: 100%;}
+	#recordTop{width:93%; height:100%; padding:30px 30px 10px 30px;}
+	#recordTop h3{width:20%;}
+	#recordTop p{width:80%;}
+
+	/*################# content + recordCon #################*/
+
+	#recordWrap{width:768px;}
+	#recordTop{width:768px; height:20px; overflow:hidden; padding:30px 30px;}
+	#recordTop h3{width:100px;float:left;}
+	#recordTop p{width:600px; margin-top:-5px; text-align:right;float:left;}
+	#recordTop p img{padding-right:5px; cursor:pointer;}
+
+	#recordCon{width:768px; height:230px; margin:0px; overflow:hidden;}
+	#recordFilm{width:1800px;}
+	#recordCon li{width:200px; height:187px; display:inline; float:left; padding:0px 28px; text-align:left;}
+	#recordCon li span{color:#888;}
+	#recordCon li p.recimg{width:190px; height:150px; padding-bottom:8px;}
+	#recordCon li p a img{width:100%; height:100%;}
+	#recordCon li p a.recorda:link, a.recorda:visited{color:#fff; }
+	#recordCon li p{margin:5px 0 3px 0;}
+
+	/*################# content + areaWrap #################*/
+
+	#areaWrap{width:100%; height:210px;}
+	#areaTop{width:100%; height:20px; padding:30px 30px;background-color:#f4f4f4;border-bottom:1px solid #ccc;}
+	#areaWrap #area ul{width:100%;}
+	#areaWrap #area ul li{width:30%; height:82px; padding: 3% 0% 3% 3%; border-bottom:0; float:left;}
+
+	#areaWrap #area li a span.areaimg{width:54px; height:80px; overflow:hidden; float:left;}
+	#areaWrap #area li a span.areaimg img.devel{margin-top:-5px;}
+	#areaWrap #area li a span.areaimg img.cm{margin-top:-100px;}
+	#areaWrap #area li a span.areaimg img.assets{margin-top:-200px;}
+
+	#areaWrap #area li a span.areatext, #areaWrap #area li a span.areatext_cm{width:65%; height:70px; overflow:hidden; float:left; color: #777; padding-top:6px; padding-left:15px; line-height:17px;}
+	#areaWrap #area li a span.areaspan{display:block; width:100%;}
+	#areaWrap #area li a strong{display:block; font-size:14px; color: #000; padding-bottom:4px;}
+
+	/*################# content + boardWrap #################*/
+
+	#boardWrap{width:100%;height:200px; border-left:0; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+	#boardWrap #boardHeader{width:100%; height:44px; text-align:right; background-color:#F4F4F4; z-index:50;}
+	#boardWrap #boardh3{width:58%;}
+	#boardWrap h3{float:left; width:130px; height:45px; z-index:60;}
+	#boardWrap #boardHeader p{width:42%; height:43px;  border-bottom:0; font-size:12px; font-family: 'Myriad Pro'; line-height:44px; text-align:right; overflow:hidden;}
+	#boardWrap #boardHeader img.bumore{padding:0 10px;}
+
+	#boardWrap #news{width:100%;}
+	#boardWrap #news #newsText{width:70%;}
+
+	/*################# content + brochureWrap #################*/
+
+	/*#brochureWrap{display:none;}*/
+	#brochureWrap{width:100%; height:140px; background-color:#C8171E; float:left; text-align:center; overflow:hidden;}
+	#brochure{width:100%; height:150px;}
+	#brochure ul{width:100%;}
+	#brochure ul li:first-child{width:50%; border:none; background: url("../img/main/bro_bar.png") no-repeat center 50% 50%;}
+	#brochure ul li{width:50%; float:left;}
+	#brochure ul li a{width:50%; height:90px; line-height:15px; color:#fff; display:block; color:#fff; padding:25px 25%;}
+	#brochure img{padding-bottom:9px;}
+
+	/*################# footer #################*/
+
+	footer{width:100%; height:120px; background-color:#E9E9E9; clear:both;}
+	#footer{width:95%; height:90px; margin:0 auto; font-size:12px; padding-top:30px;}
+	#fText{width:83%; height:100%; float:left;}
+	#fText #footerMenu{padding-bottom:15px;}
+	#fText #footerMenu a{display:inline; padding:0 5px;}
+	#fText #footerMenu a:first-child {padding-left:0;}
+	#fText #footerMenu img.footerbar{padding-bottom:2px;}
+	#fText #footerText{color:#747474;line-height:18px;}
+	#fSelect{width:17%; height:100%; float:left;}
+	#familySite select#familySelet, #member select#memberSelect{width:125px; border:1px solid #ddd; color:#747474; font-size: 11px; height:30px; margin-top:0px; margin-bottom:5px;}
+}
+
+/*스마트폰 가로버전*/
+@media all and (min-width:481px) and (max-width:767px) {
+
+	/*################# header #################*/
+
+	header{width:100%; height:85px; position:relative;}
+	#header{width:100%; height:100%; text-align:left;}
+	#header h1{position:absolute; left:30px; padding:25px 0;}
+
+	/*################# header + nav #################*/
+
+	nav{width:100%; height:100%; background:none; position:absolute;}
+	nav .m_btn{display:block; width:30%; height:61px; padding-top:25px; margin-left: 90%; cursor:pointer;}
+	nav #parent{display:none;}
+	/*nav span:hover #m_parent{display:block; width:100%; height:100%;}/
+	/* nav #m_parent > li{width:100%; border-bottom:1px solid #ddd; display:inline-block;  text-align:center; margin-left:0; margin-right:0; background-color:#fff; } */
+	nav #m_parent > li a{width:100%; height:40px; padding-top:20px; text-indent:0px; vertical-align:middle;border-bottom:1px solid #ddd; display:inline-block;  text-align:center; margin-left:0; margin-right:0; background-color:#fff;  }
+	nav #m_parent li .m_subGnb{display:block;}
+	nav #m_parent li:hover .m_subGnb{display:block; border-top:0;}
+
+	nav #m_parent li .m_subGnb{width:100%; height:100%; padding:0; background:none; border-bottom:1px solid #d51113;}
+	nav #m_parent li .m_subGnb li{width:100%;  display:inline-block; background-color:#f2f2f2;}
+	nav #m_parent li .m_subGnb li a{display:block; width: 100%; height:28px; line-height:28px; padding:2px 0px; color:#333; background:none; border-bottom:none; font-weight:normal; font-size:12px; text-align:center;}
+	nav #m_parent li .m_subGnb li a:hover{height:26px; line-height:26px; color:#e03136; background-color:#fff; border-top:1px solid #dbdbdb; border-bottom:1px solid #666; font-weight:700;}
+
+	/*################# visual #################*/
+
+	#visualWrap{max-width:100%; height:300px; margin:0 auto; overflow:hidden; position:relative;}
+	#visual{width:400%; height:300px;}
+	#visual li{width:25%; height:100%; overflow:hidden;}
+	#visual li.visualImg{float:left;}
+	#visual li img{width:100%; height:100%;}
+	#visual li:after{content:""; display:block; clear:both;}
+
+	#vcontroll{display:none;}
+	#vcontroll2{position:absolute; top:250px; left:200px; width:90%; overflow:hidden;}
+		
+	/*################# content #################*/
+
+	section{width:100%; height:100%; }
+	#content{max-width:481px; height:100%; margin:0 auto;}
+
+	/*################# content + recordTop #################*/
+
+	#recordWrap{width:481px; height:330px; background-color:#252424;}
+	#recordTop{width:481px; height:20px; overflow:hidden; padding:30px 30px;}
+	#recordTop h3{width:100px; float:left;}
+	#recordTop p{width:320px; margin-top:-5px; text-align:right;float:left;}
+	#recordTop p img{padding-right:5px; cursor:pointer;}
+
+	#recordCon{width:430px; height:230px; margin:10px 0 0 30px; }
+	#recordFilm{width:1540px;}
+	#recordCon li{width:190px; height:187px; display:inline; float:left; padding-right:27px; text-align:left;}
+	#recordCon li span{color:#888;}
+	#recordCon li p.recimg{width:190px; height:150px; padding-bottom:8px;}
+	#recordCon li p a img{width:100%; height:100%;}
+	#recordCon li p a.recorda:link, a.recorda:visited{color:#fff; }
+	#recordCon li p{margin:5px 0 3px 0;}
+
+	/*################# content + areaWrap #################*/
+
+	#areaWrap{width:100%; height:280px;}
+	#areaTop{width:100%; height:20px; padding:30px 30px;background-color:#f4f4f4;border-bottom:1px solid #ccc;}
+	#areaWrap #area ul{width:100%; height:180px;}
+	#areaWrap #area ul li{width:30%; height:100%; padding-left:3%; padding-top:3%; float:left; border-bottom:none;}
+
+	#areaWrap #area li a span.areaimg{width:54px; height:80px; overflow:hidden; padding-left:35%; }
+	#areaWrap #area li a span.areaimg img.devel{margin-top:-5px;}
+	#areaWrap #area li a span.areaimg img.cm{margin-top:-100px;}
+	#areaWrap #area li a span.areaimg img.assets{margin-top:-200px;}
+
+	#areaWrap #area li a span.areatext_cm, #areaWrap #area li a span.areatext{width:100%; height:80px; overflow:hidden; color: #777; padding-top:2%; padding-left:0; line-height:17px; text-align:left;}
+	#areaWrap #area li a span.areaspan{display:block; width:100%;}
+
+	#areaWrap #area li a strong{font-size:14px; color: #000; padding-bottom:5%; padding-left:35%;}
+	#areaWrap #area li a .strong1{padding-left:30%;}
+	#areaWrap #area li a .strong2{padding-left:38%;}
+
+	/*################# content + boardWrap #################*/
+
+	#boardWrap{width:100%;height:200px; border-left:0; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+	#boardWrap #boardHeader{width:100%; height:44px; text-align:right; background-color:#F4F4F4; z-index:50;}
+	#boardWrap #boardh3{width:58%;}
+	#boardWrap h3{float:left; width:130px; height:45px; z-index:60;}
+	#boardWrap #boardHeader p{width:42%; height:43px;  border-bottom:0; font-size:12px; font-family: 'Myriad Pro'; line-height:44px; text-align:right; overflow:hidden;}
+	#boardWrap #boardHeader img.bumore{padding:0 10px;}
+	#boardWrap #news{width:100%;}
+	#boardWrap #news #newsText{width:70%;}
+
+	/*################# content + brochureWrap #################*/
+
+	#brochureWrap{width:100%; height:140px; background-color:#C8171E; float:left; text-align:center; overflow:hidden;}
+	#brochure{width:100%; height:150px;}
+	#brochure ul{width:100%;}
+	#brochure ul li:first-child{width:50%; border:none; background: url("../img/main/bro_bar.png") no-repeat center 50% 50%;}
+	#brochure ul li{width:50%; float:left;}
+	#brochure ul li a{width:50%; height:90px; line-height:15px; color:#fff; display:block; color:#fff; padding:25px 25%;}
+	#brochure img{padding-bottom:9px;}
+
+	/*################# footer #################*/
+
+	footer{width:100%; height:150px; background-color:#E9E9E9; clear:both; }
+	#footer{width:90%; height:120px; margin:0 auto; font-size:12px; padding-top:30px;}
+	#fText{width:100%; height:70px; float:left; display:block;}
+	#fText #footerMenu{width:100%; padding-bottom:15px; text-align:center;}
+	#fText #footerMenu a{display:inline; padding:0 5px;}
+	#fText #footerMenu a:first-child {padding-left:0;}
+	#fText #footerMenu .m_hide{display:none;}
+	#fText #footerMenu img.footerbar{padding-bottom:2px;}
+	#fText #footerText{color:#747474; line-height:14px; font-size:11px; text-align:center;}
+	#fSelect{width:100%; height:30px; float:none; text-align:center; }
+	#fSelect #familySite, #fSelect #member{display:inline;}
+	#fSelect select#familySelet, #fSelect select#memberSelect{width:25%; border:1px solid #ddd; color:#747474; font-size: 11px; height:28px; margin-top:0;}
+}
+
+/*스마트폰 세로버전*/
+@media all and (min-width:320px) and (max-width:480px) {
+
+	/*################# header #################*/
+
+	header{width:100%; height:85px; position:relative;}
+	#header{width:100%; height:100%; text-align:left;}
+	#header h1{position:absolute; left:20px; padding:25px 0; }
+
+	/*################# header + nav #################*/
+
+	nav{width:100%; height:100%; background:none; position:absolute;}
+	nav .m_btn{display:block; width:30%; height:61px; padding-top:25px; margin-left: 85%; cursor:pointer;}
+	nav #parent{display:none;}
+	/*nav span:hover #m_parent{display:block; width:100%; height:100%;}/
+	/* nav #m_parent > li{width:100%; border-bottom:1px solid #ddd; display:inline-block;  text-align:center; margin-left:0; margin-right:0; background-color:#fff; } */
+	nav #m_parent > li a{width:100%; height:40px; padding-top:20px; text-indent:0px; vertical-align:middle;border-bottom:1px solid #ddd; display:inline-block;  text-align:center; margin-left:0; margin-right:0; background-color:#fff;  }
+	nav #m_parent li .m_subGnb{display:block;}
+	nav #m_parent li:hover .m_subGnb{display:block; border-top:0;}
+
+	nav #m_parent li .m_subGnb{width:100%; height:100%; padding:0; background:none; border-bottom:1px solid #d51113;}
+	nav #m_parent li .m_subGnb li{width:100%;  display:inline-block; background-color:#f2f2f2;}
+	nav #m_parent li .m_subGnb li a{display:block; width: 100%; height:28px; line-height:28px; padding:2px 0px; color:#333; background:none; border-bottom:none; font-weight:normal; font-size:12px; text-align:center;}
+	nav #m_parent li .m_subGnb li a:hover{height:26px; line-height:26px; color:#e03136; background-color:#fff; border-top:1px solid #dbdbdb; border-bottom:1px solid #666; font-weight:700;}
+
+	/*################# visual #################*/
+
+	#visualWrap{max-width:100%; height:300px; margin:0 auto; overflow:hidden; position:relative;}
+	#visual{width:400%; height:300px; margin:0 auto;}
+	#visual li{width:25%; height:100%;}
+	#visual li.visualImg{float:left;}
+	#visual li img{width:100%; height:100%;}
+	#visual li:after{content:""; display:block; clear:both;}
+
+	#vcontroll{display:none;}
+	#vcontroll2{position:absolute; top:250px; left:125px; width:90%; overflow:hidden;}
+
+	/*################# content #################*/
+
+	section{width:100%; height:100%;}
+	#content{max-width:320px; height:100%; margin:0 auto;}
+
+	/*################# content + recordTop #################*/
+
+	#recordWrap{width:320px; height: 100%;}
+	#recordTop{width:320px; height:20px; padding:30px 30px;}
+	#recordTop h3{width:10%;}
+	#recordTop p{width:70%;}
+
+	/*################# content + recordCon #################*/
+
+	#recordCon{width:260px; height:280px; margin:10px 0 0 30px; overflow:hidden;}
+	#recordFilm{width:1904px;}
+	#recordCon li{width:250px; height:247px; display:inline; float:left; padding-right:17px; text-align:left;}
+	#recordCon li span{color:#888;}
+	#recordCon li p.recimg{width:250px; height:210px; padding-bottom:8px;}
+	#recordCon li p a img{width:100%; height:100%;}
+	#recordCon li p a.recorda:link, a.recorda:visited{color:#fff; }
+	#recordCon li p{margin:5px 0 3px 0;}
+
+	/*################# content + areaWrap #################*/
+
+	#areaWrap{width:100%; height:225px;}
+	#areaTop{width:100%; height:20px; padding:30px 30px;background-color:#f4f4f4;border-bottom:1px solid #ccc;}
+	#areaWrap #area ul{width:100%; height:130px;}
+	#areaWrap #area ul li{width:30%; height:100%; padding-left:2%; padding-top:3%; float:left; border-bottom:none;}
+
+	#areaWrap #area li a span.areaimg{padding-left:33%; }
+	#areaWrap #area li a span.areaimg img.devel{margin-top:-5px;}
+	#areaWrap #area li a span.areaimg img.cm{margin-top:-100px;}
+	#areaWrap #area li a span.areaimg img.assets{margin-top:-200px;}
+
+	#areaWrap #area li a span.areatext_cm, #areaWrap #area li a span.areatext{width:100%; height:30px; overflow:hidden; color: #777; padding-top:2%; padding-left:0; line-height:17px; text-align:left;}
+	#areaWrap #area li a span.areaspan{display:none; width:100%;}
+
+	#areaWrap #area li a strong{font-size:14px; color: #000; padding-bottom:5%; padding-left:30%;}
+	#areaWrap #area li a .strong1{padding-left:26%;}
+	#areaWrap #area li a .strong2{padding-left:45%;}
+
+	/*################# content + boardWrap #################*/
+
+	#boardWrap{width:100%;height:200px; border-left:0; border-top:1px solid #ddd; border-bottom:1px solid #ddd;}
+	#boardWrap #boardHeader{width:100%; height:44px; text-align:right; background-color:#F4F4F4; z-index:50;}
+	#boardWrap #boardh3{width:84%;}
+	#boardWrap #boardHeader p{width:15%;}
+	#boardWrap #boardHeader img.bumore{padding:0 2%;}
+
+	#boardWrap #news #newsImg, #notic #noticImg{padding-right:10px;}
+	#boardWrap #news, #notic{width:100%;}
+	#boardWrap #news #newsText, #notic #noticText{width:50%;}
+	#boardWrap #news #newsText a.subText, #notic #noticText a.subText{display:none;}
+
+	#boardWrap #news #newsText{line-height:20px;}
+	#boardWrap #news #newsText p{height:15px;}
+	#boardWrap #news  #newsText a.newsTitle:link, a.newsTitle:visited{font-size:11px;}
+	#boardWrap #news  #newsText a.subText:link, a.subText:visited{font-size:10px;}
+
+	/*################# content + brochureWrap #################*/
+
+	#brochureWrap{width:100%; height:140px; background-color:#C8171E; float:left; text-align:center; overflow:hidden;}
+	#brochure{width:100%; height:150px;}
+	#brochure ul{width:100%;}
+	#brochure ul li:first-child{width:50%; border:none; background: url("../img/main/bro_bar.png") no-repeat center 50% 50%;}
+	#brochure ul li{width:50%; float:left;}
+	#brochure ul li a{width:100%; height:90px; line-height:15px; color:#fff; display:block; color:#fff; padding:25px 0%;}
+	#brochure ul li a img{padding-bottom:9px; margin:0 25%;}
+
+	/*################# footer #################*/
+
+	footer{width:100%; height:150px; background-color:#E9E9E9; clear:both; }
+	#footer{width:95%; height:120px; margin:0 auto; padding-top:20px;}	
+	#fText{width:100%; height:90px; float:left; display:block;}
+	#fText #footerMenu{width:100%; padding-bottom:8px; text-align:center;}
+	#fText #footerMenu a{display:inline; padding:0 3px;}
+	#fText #footerMenu a:first-child {padding-left:0;}
+	#fText #footerMenu .m_hide{display:none;}
+	#fText #footerMenu img.footerbar{padding-bottom:2px;}
+	#fText #footerText{color:#747474; line-height:14px; font-size:11px; text-align:center;}
+	#fText #footerText .ftoptxt{width:67%;padding:0 13%; padding-bottom:3%;}
+	#fText #footerText .ftoptxt span{display:none;}
+	#fText #footerText .fcopy{font-size:10px;}
+	#fSelect{width:100%; height:30px; float:none; text-align:center; }
+	#fSelect #familySite, #fSelect #member{display:inline;}
+	#fSelect select#familySelet, #member select#memberSelect{width:115px; border:1px solid #ddd; color:#747474; font-size: 11px; height:28px; margin-top:0;}
+}

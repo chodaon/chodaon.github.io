@@ -1,0 +1,111 @@
+﻿@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+/* 초기화 */
+
+*{margin:0; padding:0;}
+li{list-style-type:none;}
+img{border:0;}
+a:link, a:visited{text-decoration:none; color:#777;}
+a:hover, a:focus{text-decoration:none; color:#777;}
+body{margin:0; padding:0; font-size:12px; font-family: "Nanum Gothic", dotum,"돋움",sans-serif;}
+h2{position:absolute; left:-9999px; font-size:1px; overflow:hidden; width:1px; height:1px; line-height:1px;}
+#wrap{width:100%;}
+
+/* header */
+
+#headerWrap{width:100%; height:77px; margin:0 auto; border-bottom:1px solid #ddd; z-index:1000; position:relative; }
+#header{width:1000px; height:77px; margin:0 auto; }
+#header h1{width:240px; height:31px; float:left; padding:23px 10px; }
+
+/* nav */
+
+#nav{width:740px; height:77px; float:left;}
+#nav span{display:none;}
+#nav ul li{float:left; position:relative; margin-left:50px;}
+#nav ul li a{width:135px; height:17px; display:inline-block; padding:30px 0; text-align:center; }
+#nav ul li ul.subGnb{position:absolute; display:none; width:135px; padding:6px 0 18px; font-size:13px; font-weight:700; background-color:#fff; border-top:1px solid #ddd; border-left:1px solid #c2c2c2; border-right:1px solid #c2c2c2; border-bottom:1px solid #d51113; z-index:100;}
+#nav ul li ul.subGnb li{ margin-left:0;}
+#nav ul li ul.subGnb li a{ color:#333; text-align:left; width:118px;  padding:0 0 0 17px; height:28px; line-height:28px; }
+#nav ul li ul.subGnb li a:hover{background:#666; color:#fff; }
+#nav ul:after{content:""; display:block; clear:both;}
+
+/* content */
+
+#contentWrap{width:100%; overflow:hidden;}
+#subconWrap{width:1000px; margin:40px auto; position:relative;}
+
+/* quickmenu */
+
+#quickmenu{position:fixed; top:160px; left:1150px;}
+#quickmenu ul li a{width:88px; display:inline-block; height:80px; margin:0 0 8px; background:url("../img/subImg/btn_quickmenu.gif") no-repeat 0 0;}
+#quickmenu ul li a.menu1{background-position:0 0;}
+#quickmenu ul li a.menu2{background-position:0 -168px;}
+#quickmenu ul li a.menu3{background-position:0 -84px;}
+#quickmenu ul li a.menu4{background-position:0 -252px;}
+#quickmenu ul li a span{position:absolute; left:-2000%;}
+
+/* subconWrap */
+
+#subconWrap #subLab{float:left; width: 165px; height:100%; margin-right:50px;}
+#subconWrap #subLab p{padding:40px 0 38px; border-bottom:3px solid #333;}
+#subconWrap #subLab p span:first-child{font-size:12px; font-family:'Tahoma'; font-weight:normal; color: #999; padding-bottom:5px;}
+#subconWrap #subLab p span{display:block; font-size:28px; color:#333; font-weight:bold; padding-left:6px;}
+
+#subconWrap #menuTab{margin-top:25px;}
+#subconWrap #menuTab li a{width:155px; height:40px; font-size:14px; display:inline-block; padding:0 0 0 10px; line-height:40px; font-weight:bold; color: #333; border-bottom: 1px solid #d2d2d2; background:url("img/subImg/bu_lnb.gif") no-repeat 150px 50%;}
+#subconWrap #menuTab li:first-child{border-top:1px solid #d2d2d2;}
+
+#subconWrap #subCon{width:765px; float:left; padding:0 0 30px; position:relative;}
+#subCon #subTop{width:765px; height:115px; padding:15px 0 0 0;}
+#subCon #subTop h3{font-size:36px; font-family:"Segoe UI","Nanum Gothic", dotum,"돋움",sans-serif; color:#333; padding-top:10px;}
+#subCon #subTop p{font-size:17px; font-weight:bold; color:#333; line-height:21px; padding:13px 0 22px;}
+#subCon #subNav{position:absolute; top:41px; right:0; font-family:dotum,"돋움",sans-serif; color:#999;}
+#subCon #subNav span{padding:0 5px;}
+#subCon #subNav span.currentpage{color:#333;}
+
+#subCon #substance{position:relative; height:100%; border-top:1px solid #d2d2d2; padding:65px 0 50px;}
+
+p.warn{width:738px; height:55px; line-height:55px; font-size:13px; color:#333; padding:0 0 0 27px; background: url("../img/subImg/icon_bg_area.gif") no-repeat 0 0; margin-top:40px;}
+p.warn img{padding:0 8px 0 0; vertical-align:middle;}
+p.bottomBtn{text-align:center; margin-top:50px;}
+p.bottomBtn a:first-child{margin:0 11px 0 0;}
+
+div.txtbox{width:722px; height:120px; overflow-y:scroll; padding:15px 21px 20px; border:1px solid #d2d2d2; margin-top:10px;}
+.txtbox a{text-decoration:underline;}
+.txt1{line-height:21px; color:#333; font-size:13px; text-align:justify;}
+.txt3{font-size:13px; color:#333; line-height:21px; text-align:justify; margin-top:10px;}
+.txt5{font-size:12px; color:#666; line-height:19px; margin-top:10px;}
+
+div#textboxchk{text-align:center; padding:13px 0 0;}
+p.qnaBu{margin-top:50px; text-align:right;}
+
+p.titleTxt{font-size:20px; font-weight:bold; color:#333; background:url("../img/subImg/bu_resultTxt.gif") no-repeat 0 0; height:21px; padding:11px 0 0;}
+
+.table{width:765px; margin-top:15px; border-collapse:collapse;}
+caption{position:absolute; left:-2000px;}
+.table thead tr th{width:109px; height:40px; text-align:left; padding:0 11px 0 15px; background-color:#f4f4f4; border-bottom:1px solid #d2d2d2;}
+.table tbody tr th img{float:right;}
+.table tbody tr:first-child th{border-top: 1px solid #000;}
+.table tbody th{text-align:left; padding:0 11px 0 15px; background-color:#f4f4f4; border-bottom:1px solid #d2d2d2;}
+.table tbody tr td{padding:10px 0 11px 19px; border-bottom:1px solid #d2d2d2;} 
+.table tbody tr:first-child td{border-top: 1px solid #000;}
+.table tbody tr td.need label{padding:0 14px 0 7px;}
+select#area{width:90px; height:26px; margin:0 2px 0 0;}
+.table tbody tr td p a img{vertical-align:middle; padding: 0 0 0 5px;}
+
+input{height:18px; padding:3px; font-size:11px; color:#b6b6b6; vertical-align:middle; background-color:#fff; border:1px solid #ddd; font-family:"Nanum Gothic", dotum,"돋움",sans-serif;}
+select{height:26px; vertical-align:middle; background-color:#fff; border:1px solid #ddd; color:#444; font-family:"Nanum Gothic", dotum,"돋움",sans-serif;margin:0 2px 0 0;}
+textarea{font-family:"Nanum Gothic", dotum,"돋움",sans-serif; padding:5px;}
+
+/* footer */
+
+#footerWrap{width:100%; height:120px; background-color:#E9E9E9;}
+#footer{width:980px; height:90px; margin:0 auto; font-size:12px; padding-top:30px;}
+#fText{width:830px; height:100%; float:left;}
+#fText #footerMenu{padding-bottom:15px;}
+#fText #footerMenu a{display:inline; padding:0 5px;}
+#fText #footerMenu a:first-child {padding-left:0;}
+#fText #footerMenu img.footerbar{padding-bottom:2px;}
+#fText #footerText{color:#747474;line-height:18px;}
+#fSelect{width:150px; height:100%; float:left;}
+#fSelect #familySelet, #member #memberSelect{width:150px; border:1px solid #ddd; color:#747474; height:28px;}
+#member #memberSelect{margin-top:5px;}

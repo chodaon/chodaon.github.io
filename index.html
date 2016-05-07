@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<title>| kt estate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>  
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/index.js"></script>
+</head>
+ <body>
+	<div id="skipNav">
+		<a href="#header">메인 메뉴로 바로가기</a>
+		<a href="#content">본문으로 바로가기</a>
+	</div>
+	<div id="wrap">
+		<header>
+		<h2>header영역</h2>
+			<div id="header">
+				<h1>
+					<a href="index.html" title="ktestate사이트"><img src="img/main/logo.gif" alt="ktestate로고"/></a><br/>
+				</h1>
+				<nav>
+					<!--<h2>navigation영역</h2>-->
+					<span class="m_btn"><img src="img/main/menu6.png" alt="메뉴"/></span>
+					<ul id="parent"> <!--nav영역을 하나 더 만들어서 모바일때 pc, 태블릿 nav css에서 display:none;하는 방법.-->
+						<li>
+							<a href="gnb1_summary.html" title="회사소개">
+								<img src="img/gnb/gnb00.gif" alt="회사소개"/>
+							</a>
+							<ul class="subGnb">
+								<li>
+									<a href="gnb1_summary.html" title="개요">개요</a>
+								</li>
+								<li>
+									<a href="gnb1_ceo.html" title="CEO">CEO</a>
+								</li>
+								<li>
+									<a href="gnb1_history.html" title="연혁">연혁</a>
+								</li>
+								<li>
+									<a href="gnb1_vision.html" title="비전">비전</a>
+								</li>
+								<li>
+									<a href="gnb1_management.html" title="윤리경영">윤리경영</a>
+								</li>
+								<li>
+									<a href="gnb1_location.html" title="오시는길">오시는길</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="gnb2_business.html" title="사업영역">
+								<img src="img/gnb/gnb01.gif" alt="사업영역"/>
+							</a>
+							<ul class="subGnb">
+								<li>
+									<a href="gnb2_business.html" title="개발/투자">개발/투자</a>
+								</li>
+								<li>
+									<a href="gnb2_cm.html" title="CM">CM</a>
+								</li>
+								<li>
+									<a href="gnb2_assets.html" title="자산운영">자산운영</a>
+								</li>
+								<li>
+									<a href="gnb2_securitization.html" title="유동화/증권화">유동화/중권화</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="gnb3_news.html" title="홍보센터">
+								<img src="img/gnb/gnb02.gif" alt="홍보센터"/>
+							</a>
+							<ul class="subGnb">
+								<li>
+									<a href="gnb3_news.html" title="News">News</a>
+								</li>
+								<li>
+									<a href="gnb3_ci.html" title="CI">CI</a>
+								</li>
+								<li>
+									<a href="gnb3_brochur.html" title="브로슈어">브로슈어</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="gnb4_customer.html" title="고객지원">
+								<img src="img/gnb/gnb03.gif" alt="고객지원"/>
+							</a>
+							<ul class="subGnb">
+								<li>
+									<a href="gnb4_customer.html" title="공지사항">공지사항</a>
+								</li>
+								<li>
+									<a href="gnb4_pnotice.html" title="매각공고">매각공고</a>
+								</li>
+								<li>
+									<a href="gnb4_qna.html" title="QNA">Q&amp;A</a>
+								</li>
+								<li>
+									<a href="gnb4_callnumber.html" title="주요연락처">주요연락처</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul id="m_parent">
+						<li>
+							<a href="gnb1_summary.html" title="회사소개" onclick="return false;">
+								<img src="img/gnb/gnb00.gif" alt="회사소개"/>
+							</a>
+							<ul class="m_subGnb">
+								<li>
+									<a href="gnb1_summary.html" title="개요">개요</a>
+								</li>
+								<li>
+									<a href="gnb1_ceo.html" title="CEO">CEO</a>
+								</li>
+								<li>
+									<a href="gnb1_history.html" title="연혁">연혁</a>
+								</li>
+								<li>
+									<a href="gnb1_vision.html" title="비전">비전</a>
+								</li>
+								<li>
+									<a href="gnb1_management.html" title="윤리경영">윤리경영</a>
+								</li>
+								<li>
+									<a href="gnb1_location.html" title="오시는길">오시는길</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="gnb2_business.html" title="사업영역" onclick="return false;">
+								<img src="img/gnb/gnb01.gif" alt="사업영역"/>
+							</a>
+							<ul class="m_subGnb">
+								<li>
+									<a href="gnb2_business.html" title="개발/투자">개발/투자</a>
+								</li>
+								<li>
+									<a href="gnb2_cm.html" title="CM">CM</a>
+								</li>
+								<li>
+									<a href="gnb2_assets.html" title="자산운영">자산운영</a>
+								</li>
+								<li>
+									<a href="gnb2_securitization.html" title="유동화/증권화">유동화/중권화</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="gnb3_news.html" title="홍보센터" onclick="return false;">
+								<img src="img/gnb/gnb02.gif" alt="홍보센터"/>
+							</a>
+							<ul class="m_subGnb">
+								<li>
+									<a href="gnb3_news.html" title="News">News</a>
+								</li>
+								<li>
+									<a href="gnb3_ci.html" title="CI">CI</a>
+								</li>
+								<li>
+									<a href="gnb3_brochur.html" title="브로슈어">브로슈어</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="gnb4_customer.html" title="고객지원" onclick="return false;">
+								<img src="img/gnb/gnb03.gif" alt="고객지원"/>
+							</a>
+							<ul class="m_subGnb">
+								<li>
+									<a href="gnb4_customer.html" title="공지사항">공지사항</a>
+								</li>
+								<li>
+									<a href="gnb4_pnotice.html" title="매각공고">매각공고</a>
+								</li>
+								<li>
+									<a href="gnb4_qna.html" title="QNA">Q&amp;A</a>
+								</li>
+								<li>
+									<a href="gnb4_callnumber.html" title="주요연락처">주요연락처</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>			
+		</header>
+		<div id="visualWrap">
+			<!--<h2>visual영역</h2>-->
+			<ul id="visual">
+				<li class="visualImg">
+					<img src="img/main/mainvisual00.png" alt="mainvisual0"/>
+				</li>
+				<li class="visualImg">
+					<img src="img/main/mainvisual01.png" alt="mainvisual1"/>
+				</li>
+				<li class="visualImg">
+					<img src="img/main/mainvisual02.png" alt="mainvisual2"/>
+				</li>
+				<li class="visualImg">
+					<img src="img/main/mainvisual03.png" alt="mainvisual3"/>
+				</li>
+			</ul>
+			<div id="vcontroll">
+				<div id="leftbtn">
+					<a href="#" title="이전버튼" onclick="return false;">
+						<img src="img/btn/btn_roll_left.png" alt="이전버튼"/>
+					</a>
+				</div>
+				<div id="rightbtn">
+					<a href="#" title="다음버튼" onclick="return false;">
+						<img src="img/btn/btn_roll_right.png" alt="다음버튼"/>
+					</a>
+				</div>
+			</div>
+			<div id="vcontroll2">
+				<ul>
+					<li>
+						<a href="#btn0" title="메인이미지1">
+							<span>0</span>
+							<img src="img/btn/btn_rollBtn_on.png" alt="메인이미지1"/>
+						</a>
+					</li>
+					<li>
+						<a href="#btn1" title="메인이미지2">
+							<span>1</span>
+							<img src="img/btn/btn_rollBtn.png" alt="메인이미지2"/>
+						</a>
+					</li>
+					<li>
+						<a href="#btn2" title="메인이미지3">
+							<span>2</span>
+							<img src="img/btn/btn_rollBtn.png" alt="메인이미지3"/>
+						</a>
+					</li>
+					<li>
+						<a href="#btn3" title="메인이미지4">
+							<span>3</span>
+							<img src="img/btn/btn_rollBtn.png" alt="메인이미지4"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<section>
+		<h2>section영역</h2>
+			<div id="content">
+				<div id="recordWrap">
+					<div id="recordTop">
+						<h3><img src="img/main/txt_mainCon01.png" alt="사업실적"/></h3>
+						<p>
+							<a  class="recleftbtn" href="#" title="이전버튼" onclick="return false;">
+								<img src="img/btn/record_left.png" alt="레코드왼쪽버튼"/>
+							</a>
+							<a  class="recrightbtn" href="#" title="다음버튼" onclick="return false;">
+								<img src="img/btn/record_right.png" alt="레코드오른쪽버튼"/>
+							</a>
+						</p>
+					</div>
+					<div id="recordCon">
+						<ul id="recordFilm">
+							<li class="lirecimg">
+								<p class="recimg"><a  href="#" title="목동 IDC 센터"><img src="img/main/recImg00.jpg" alt="목동 IDC 센터"/></a></p>
+								<p><a class="recorda" href="#" title="목동 IDC 센터">목동 IDC 센터</a></p>
+								<span>CM | 서울시 양천구 목동</span>
+							</li><!--
+							 --><li class="lirecimg" id="eq1">
+								<p class="recimg"><a  href="#" title="영동지사 2단계 개발사업"><img src="img/main/recImg01.jpg" alt="영동지사 2단계 개발사업"/></a></p>
+								<p><a class="recorda" href="#" title="영동지사 2단계 개발사업">영동지사 2단계 개발사업</a></p>
+								<span>Hotel | 서울시 강남구 역삼동</span>
+							</li><!--
+							 --><li class="lirecimg" id="eq2">
+								<p class="recimg"><a  href="#" title="부산 영도 아파트 개발사업"><img src="img/main/recImg02.png" alt="부산 영도 아파트 개발사업"/></a></p>
+								<p><a class="recorda" href="#" title="부산 영도 아파트 개발사업">부산 영도 아파트 개발사업</a></p>
+								<span>Residential | 부산광역시 영도구 동삼1동</span>
+							</li>
+							<li class="lirecimg" id="eq3">
+								<p class="recimg"><a  href="#" title="영등포 오피스텔 개발사업"><img src="img/main/recImg03.jpg" alt="영등포 오피스텔 개발사업"/></a></p>
+								<p><a class="recorda" href="#" title="영등포 오피스텔 개발사업">영등포 오피스텔 개발사업</a></p>
+								<span>Residential | 서울시 관악구 봉천동</span>
+							</li>
+							<li class="lirecimg" id="eq4">
+								<p class="recimg"><a  href="#" title="삼계·구산 IPark 아파트 개발사업"><img src="img/main/recImg04.jpg" alt="삼계·구산 IPark 아파트 개발사업"/></a></p>
+								<p><a class="recorda" href="#" title="삼계·구산 IPark 아파트 개발사업">삼계·구산 IPark 아파트 개발사업</a></p>
+								<span>Residential | 경남 김해시 삼계동</span>
+							</li>
+							<li class="lirecimg" id="eq5">
+								<p class="recimg"><a  href="#" title="청진구역 업무시설 개발사업"><img src="img/main/recImg05.jpg" alt="청진구역 업무시설 개발사업"/></a></p>
+								<p><a class="recorda" href="#" title="청진구역 업무시설 개발사업">청진구역 업무시설 개발사업</a></p>
+								<span>office | 서울시 종로구 청진동</span>
+							</li>
+							<li class="lirecimg" id="eq6">
+								<p class="recimg"><a  href="#" title="구의동 강북 본부 개발사업 마스터 플랜"><img src="img/main/recImg06.jpg" alt="구의동 강북 본부 개발사업 마스터 플랜"/></a></p>
+								<p><a class="recorda" href="#" title="구의동 강북 본부 개발사업 마스터 플랜">구의동 강북 본부 개발사업 마스터 플랜</a></p>
+								<span>Retail | 서울시 광진구 자양동</span>
+							</li>
+						</ul>
+					</div>			
+				</div>
+				<div id="areaWrap">
+					<div id="areaTop">
+						<h3><img src="img/main/txt_mainCon04.png" alt="사업영역"/></h3>
+					</div>
+					<div id="area">
+						<ul>
+							<li>
+								<a href="gnb2_business.html" title="개발/투자">
+								<span class="areaimg"><img class="devel" src="img/main/icon_area2.gif" alt="개발투자이미지1"/></span>
+								<span class="areatext">
+								<strong class="strong1">개발/투자</strong>
+								<span class="areaspan">혁신적인 부동산 개발사업을 통해 자산가치의 극대화를 창출합니다.</span>
+								</span>
+								</a>
+							</li>
+							<li>
+								<a href="gnb2_cm.html" title="CM">
+								<span class="areaimg"><img class="cm" src="img/main/icon_area2.gif" alt="개발투자이미지2"/></span>
+								<span class="areatext_cm">
+								<strong class="strong2">CM</strong>
+								<span class="areaspan">전문화된 건설사업관리로 공사품질은 물론, 건물의 자산가치까지 높여드립니다.</span>
+								</span>
+								</a>
+							</li>
+							<li>
+								<a href="gnb2_assets.html" title="자산운영">
+								<span class="areaimg"><img class="assets" src="img/main/icon_area2.gif" alt="개발투자이미지3"/></span>
+								<span class="areatext">
+								<strong>자산운영</strong>
+								<span class="areaspan">전국에 분포한 보유/위탁자산에 대해 운영관리 및 임대 서비스를 제공합니다.</span>
+								</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="boardWrap">
+					<div id="boardHeader">
+						<div id="boardh3">
+							<h3><img class="boardnews" src="img/main/news_on.gif" alt="보도자료" /></h3>
+							<h3><img class="boardnotic" src="img/main/notice.gif" alt="공지사항" /></h3>
+						</div>
+						<p><a href="gnb3_news.html" title="더보기버튼" onclick="return false;">more<img class="bumore" src="img/btn/bu_more.gif" alt="더보기 버튼"/></a></p>
+					</div>
+					<div id="showboard">
+						<div id="news">
+							<div id="newsImg">
+								<img src="img/main/news.jpg" alt="뉴스이미지"/>
+							</div>
+							<div id="newsText">
+								<ul>
+									<li>
+										<p><a class="newsTitle" href="#" title="뉴스제목"><strong>'집주인이 대기업'…통신·금융·유통사 주택임대사업 본격화</strong></a></p>
+										<p><a class="subText" href="#" title="뉴스내용">'집주인이 대기업'…통신·금융·유통사 ...</a></p>
+									</li>
+									<li>
+										<p><a class="newsTitle" href="#" title="뉴스제목"><strong>'호텔' 안 부러운 원스톱 주거서비스 열린다</strong></a></p>
+										<p><a class="subText" href="#" title="뉴스내용">'호텔' 안 부러운 원스톱 주거서비스 열린다[대기업 주택임대사업 원년] KT...</a></p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div id="notic">
+							<div id="noticImg">
+								<img src="img/main/bu_home.gif" alt="공지사항"/>
+							</div>
+							<div id="noticText">
+								<ul>
+									<li>
+										<p><a class="noticTitle" href="#" title="공지사항제목"><strong>임대시설 및 서비스에 대한 고객 만족도 조사 당첨자 발표</strong></a></p>
+										<p><a class="subText" href="#" title="공지사항내용">kt estate에서 실시한 고객만족도 ...</a></p>
+									</li>
+									<li>
+										<p><a class="noticTitle" href="#" title="공지사항제목"><strong>부동산매각 공개입찰 공고</strong></a></p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="brochureWrap">
+					<div id="brochure">
+						<ul>
+							<li>
+								<a href="gnb3_brochure.html" title="기업소개브로슈어">
+								<img src="img/main/icon_field06.png" alt="기업소개브로슈어"/><br/>
+								<span>기업소개 브로슈어<br/>다운로드</span>
+								</a>
+							</li>
+							<li>
+								<a class="lbrochure" href="http://www.kthrd.com/index.do" title="kt대전인재개발원">
+								<img src="img/main/icon_field07.png" alt="kt대전인재개발원"/><br/>
+								<span>KT대전인재개발원</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+		<h2>footer영역</h2>
+			<div id="footerWrap">
+				<div id="footer">
+					<div id="fText">
+						<div id="footerMenu">
+							<a class="m_hide" href="http://www.ktestate.com/Company/Introduce/" title="회사소개">
+								<img src="img/footer/footer_txt01.png" alt="회사소개"/>
+							</a>
+							<img class="m_hide" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+							<a href="http://www.ktestate.com/Prove/" title="이용약관">
+								<img src="img/footer/footer_txt07.png" alt="이용약관"/>
+							</a>
+							<img class="footerbar" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+							<a href="http://www.ktestate.com/Privacy/" title="개인정보취급방침">
+								<img src="img/footer/footer_txt02.png" alt="개인정보취급방침"/>
+							</a>
+							<img class="footerbar" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+							<a href="http://www.ktestate.com/policy/" title="영상정보처리기기 운영 및 관리 방침">
+								<img src="img/footer/footer_txt06.png" alt="영상정보처리기기 운영 및 관리 방침"/>
+							</a>
+							<img class="m_hide" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+							<a class="m_hide" href="#" title="이메일주소무단수집거부">
+								<img src="img/footer/footer_txt03.png" alt="이메일주소무단수집거부"/>
+							</a>
+							<img class="m_hide" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+							<a class="m_hide" href="http://www.ktestate.com/Support/Qna/" title="고객문의">
+								<img src="img/footer/footer_txt04.png" alt="고객문의"/>
+							</a>
+							<img class="m_hide" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+							<a class="m_hide" href="http://www.ktestate.com/Support/Contact/" title="주요 연락처">
+								<img src="img/footer/footer_txt05.png" alt="주요 연락처"/>
+							</a>
+						</div>
+						<div id="footerText">
+							<p class="ftoptxt">서울시 강남구 테헤란로 422 kt타워 17층<span> | </span>(주)케이티에스테이트 대표이사 : 최일성</p>
+							<p class="fcopy">Copyright &copy; 2014 by kt estate, LTD. All rights reserved.</p>
+						</div>
+					</div>
+					<div id="fSelect">
+						<div id="familySite">
+							<select id="familySelet">
+								<option value="familysite">Family site</option>
+								<option value="kt">kt</option>
+								<option value="ktds">ktds</option>
+								<option value="kth">kth</option>
+								<option value="ktlinkus">kt linkus</option>
+								<option value="ktsubmarine">kt submarine</option>
+								<option value="ktnetworks">kt networks</option>
+								<option value="ktcommerce">kt commerce</option>
+								<option value="ktrental">kt rental</option>
+								<option value="ktmhows">kt mhows</option>
+								<option value="kttelecop">kt telecop</option>
+								<option value="ktcapital">kt capital</option>
+								<option value="kttech">kt tech</option>
+								<option value="Sidus FNH">Sidus FNH</option>
+								<option value="nasmedia">nasmedia</option>
+							</select>
+						</div>
+						<div id="member">
+							<select id="memberSelect">
+								<option value="ktestate">kt estate 임직원용</option>
+								<option value="blue">BLUE(운영)</option>
+								<option value="bluemr">BLUE(MR조회)</option>
+								<option value="pmis">PMIS</option>
+								<option value="eps">EPS(업체용)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+ </body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+ <meta charset="utf-8"/>
+  <title>사업영역/자산영역/핵심역량| kt estate</title>
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/prevent.js"></script>
+  <link rel="stylesheet" href="css/a_ability.css" type="text/css">
+	<style type="text/css">	
+	</style>
+	<script>
+		$(function(){
+			/*nav slide*/
+			$(".subGnb").hide();
+			$("#parent li").bind("mouseenter focusin",function(){
+				$(this).children(".subGnb").stop().slideDown();
+			}).bind("mouseleave focusout",function(){		
+				$(this).children(".subGnb").stop().slideUp();
+			});
+
+			/*nav 색상 변경*/
+			$("#parent li").bind("mouseenter focusin", function(){
+				var num = $(this).index();
+				$(this).children("a").children("img").attr("src","img/gnb/gnb0"+num+"_on.gif");
+			}).bind("mouseleave focusout",function(){
+				var num = $(this).index();
+				$(this).children("a").children("img").attr("src","img/gnb/gnb0"+num+".gif");
+			});
+
+			/*menuTab*/
+			$("#menuTab ul li div").hide();
+			$("#menuTab ul li:eq(2) div").show();
+			$("#menuTab ul li:eq(2) > a").addClass("aclick");
+			$("#menuTab ul li").click(function(){
+				if($(this).children("div").attr("class") == "subhide"){
+					//li의 children div에 class subhide가 있다면 
+					$("#menuTab ul li div").slideUp().attr("class","");
+					//li의 children div가 슬라이드 업 되고 class를 비워주기!
+				}else{
+					$("#menuTab ul li div").slideUp().attr("class","");
+					$(this).children("div").slideDown().attr("class","subhide");
+				}
+				$("#menuTab ul li a").removeClass("aclick");
+				$(this).children("a").addClass("aclick");
+			});
+			//li자신을 클릭 했을 때 aclick의 css가 적용되어야함.
+			//li 자신이 아닌 다른 li를 클릭했을 때 aclick의 css가 해제되어야함!
+
+			//자식요소한테 가기전에 부모요소 클릭?
+			
+			//taba를 눌렀을 때 tabArrow의 p.it img가 taba아래로
+			//tabb를 눌렀을 때 tabArrow의 p.it img가 tabb아래로
+			$(".tabA").click(function(){
+				$(".tabArrow .it").css({"left":"18px"});
+			});
+			$(".tabB").click(function(){
+				$(".tabArrow .it").css({"left":"210px"});
+			});
+			$(".tabC").click(function(){
+				$(".tabArrow .it").css({"left":"400px"});
+			});
+			$(".tabD").click(function(){
+				$(".tabArrow .it").css({"left":"590px"});
+			});
+
+
+			/*tab menu*/
+			$(".aAbilityD").hide();
+			$("#taba").show();
+			$(".tab3 a").bind("click focusin", function(event){
+				event.preventDefault();
+				$(".aAbilityD").hide();
+				$($(this).attr("href")).show();
+				$(".tab3 a").removeClass("on");
+				$(this).addClass("on");
+			});	
+		});
+	</script>
+ </head>
+ <body>
+	<div id="wrap">
+		<div id="headerWrap">
+			<div id="header">
+				<h2>header영역</h2>
+				<h1>
+					<a href="index.html" title="ktestate사이트"><img src="img/main/logo.gif" alt="ktestate로고"/></a><br/>
+				</h1>
+				<div id="nav">
+					<h2>nav영역</h2>
+					<ul id="parent">
+						<li>
+							<a href="gnb1_summary.html" title="회사소개">
+								<img src="img/gnb/gnb00.gif" alt="회사소개"/>
+							</a>
+							<ul class="subGnb">
+								<li>
+									<a href="gnb1_summary.html" title="개요">개요</a>
+								</li>
+								<li>
+									<a href="gnb1_ceo.html" title="CEO">CEO</a>
+								</li>
+								<li>
+									<a href="gnb1_history.html" title="연혁">연혁</a>
+								</li>
+								<li>
+									<a href="gnb1_vision.html" title="비전">비전</a>
+								</li>
+								<li>
+									<a href="gnb1_management.html" title="윤리경영">윤리경영</a>
+								</li>
+								<li>
+									<a href="gnb1_location.html" title="오시는길">오시는길</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="gnb2_business.html" title="사업영역">
+								<img src="img/gnb/gnb01.gif" alt="사업영역"/>
+							</a>
+							<ul class="subGnb">
+								<li>
+									<a href="gnb2_business.html" title="개발/투자">개발/투자</a>
+								</li>
+								<li>
+									<a href="gnb2_cm.html" title="CM">CM</a>
+								</li>
+								<li>
+									<a href="gnb2_assets.html" title="자산운영">자산운영</a>
+								</li>
+								<li>
+									<a href="gnb2_securitization.html" title="유동화/증권화">유동화/중권화</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="gnb3_news.html" title="홍보센터">
+								<img src="img/gnb/gnb02.gif" alt="홍보센터"/>
+							</a>
+							<ul class="subGnb">
+								<li>
+									<a href="gnb3_news.html" title="News">News</a>
+								</li>
+								<li>
+									<a href="gnb3_ci.html" title="CI">CI</a>
+								</li>
+								<li>
+									<a href="gnb3_brochure.html" title="브로슈어">브로슈어</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="gnb4_customer.html" title="고객지원">
+								<img src="img/gnb/gnb03.gif" alt="고객지원"/>
+							</a>
+							<ul class="subGnb">
+								<li>
+									<a href="gnb4_customer.html" title="공지사항">공지사항</a>
+								</li>
+								<li>
+									<a href="gnb4_pnotice.html" title="매각공고">매각공고</a>
+								</li>
+								<li>
+									<a href="gnb4_qna.html" title="QNA">Q&amp;A</a>
+								</li>
+								<li>
+									<a href="gnb4_callnumber.html" title="주요연락처">주요연락처</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="contentWrap">
+			<h2>content영역</h2>
+			<div id="subconWrap">
+				<div id="quickmenu">
+					<ul>
+						<li>
+							<a class="menu1" href="gnb2_business.html" title="개발/투자"><span>개발/투자</span></a>
+						</li>
+						<li>
+							<a class="menu2" href="gnb2_cm.html" title="CM"><span>CM</span></a>
+						</li>
+						<li>
+							<a class="menu3" href="gnb2_assets.html" title="자산운영"><span>자산운영</span></a>
+						</li>
+						<li>
+							<a class="menu4" href="gnb4_qna.html" title="고객문의"><span>고객문의</span></a>
+						</li>
+					</ul>
+				</div>
+				<div id="subLab">
+					<p>
+						<span>Business Area</span>
+						<span>사업영역</span>
+					</p>
+					<div id="menuTab">
+						<ul>
+							<li>
+								<a class="menutabs" href="#" title="개발투자">개발/투자</a>
+								<div>
+									<a href="gnb2_b_introduce.html" title="사업소개">사업소개</a>
+									<a href="gnb2_b_ability.html" title="핵심역량">핵심역량</a>
+									<a href="gnb2_b_ict.html" title="ICT/그린사업">ICT/그린사업</a>
+									<a href="gnb2_b_list.html" title="주요실적">주요실적</a>
+									<a href="gnb2_b_house.html" title="소형임대주택">소형임대주택</a>
+								</div>
+							</li>
+							<li>
+								<a class="menutabs" href="#" title="CM">CM</a>
+								<div>
+									<a href="gnb2_cm.html" title="사업소개">사업소개</a>
+									<a href="gnb2_c_list.html" title="주요실적">주요실적</a>
+								</div>
+							</li>
+							<li>
+								<a class="menutabs" href="#" title="자산운영">자산운영</a>
+								<div>
+									<a href="gnb2_assets.html" title="사업소개">사업소개</a>
+									<a class="on" href="gnb2_a_ability.html" title="핵심역량">핵심역량</a>
+									<a href="#" title="주요자산">주요자산</a>
+								</div>
+							</li>
+							<li id="lastli">
+								<a href="gnb2_securitization.html" class="menutabs" title="유동화/증권화">유동화/증권화</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="subCon">
+					<div id="subNav">
+						<span><img src="img/subImg/bu_home.gif" alt="home"/></span>&gt;<span>사업영역</span>&gt;<span>자산운영</span>&gt;<span class="currentpage">핵심역량</span>
+					</div>
+					<div id="subTop"> 
+						<h3>핵심역량</h3>
+						<p>kt estate만의 핵심역량, 고객만족을 위한 첫걸음입니다.</p>
+					</div>
+					<div id="substance">							
+						<div class="tab3">
+							<a href="#taba" class="tabA on"><span>전략적 자산관리<br>서비스</span></a>
+							<a href="#tabb" class="tabB"><span>보안 1등급<br>시설 관리 서비스</span></a>
+							<a href="#tabc" class="tabC"><span>전국적 네트워크망<br>구축</span></a>
+							<a href="#tabd" class="tabD"><span>ICT 기반 빌딩<br>경영 역량</span></a>
+						</div>
+						<div class="tabArrow">
+							<p class="it"><img src="img/subImg/tab_row.gif" alt="화살표"></p> 	
+						</div>
+						<div id="taba" class="aAbilityD">
+							<p class="resultTxt">핵심역량 1. <span>자산관리 역량</span></p>
+							<ul class="mt15">
+								<li>전국 500여 개의 수익형 부동산 및 4,500여 개의 통신용 빌딩 등 풍부한 자산관리 경험</li>
+								<li>대형 임차고객부터 SOHO 규모의 소형 임차고객까지 다양한 고객군 보유</li>
+								<li>270여 명의 전문 인력을 통한 자산관리 노하우</li>
+								<li>전국적 네트워크 확보로 고객의 다양한 요구에 맞는 맞춤형 공간 공급 </li>								
+							</ul>								
+						</div>
+						<div id="tabb" class="aAbilityD" >
+							<p class="resultTxt">핵심역량 2. <span>시설관리 역량</span></p>
+							<ul class="mt15">
+								<li>24시간, 365일 무중단 운영이 필수인 통신전용 건물의 관리 경험 보유</li>
+								<li>최고 수준의 빌딩 전력 관리 및 소방시설 관리 노하우</li>
+								<li>보안 1등급 건물의 관리 경험에 기반한 체계적인 경비인력 운영 및 보안 체계 운용 노하우</li>										
+							</ul>								
+						</div>
+						<div id="tabc" class="aAbilityD">
+							<p class="resultTxt">핵심역량 3. <span>최유효 활용 역량</span></p>
+							<ul class="mt15">
+								<li>기업 보유 자산의 효율적 운영을 위한 공간 재배치, 공간 최적화 경험</li>
+								<li>기업 보유 부동산 최유효 활용 경험과 노하우 기반의 최적 컨설팅 역량보유</li>
+								<li>다년간 전화국 자체 구축 경험에 기반한 빌딩 건축·전기·설비에 대한 Due Diligence 역량</li>										
+							</ul>								
+						</div>
+						<div id="tabd" class="aAbilityD">
+							<p class="resultTxt">핵심역량 4. <span>ICT 기반 빌딩경영 역량</span></p>
+							<ul class="mt15">
+								<li>국내 최대 정보통신회사인 kt의 역량을 활용한 ICT 기반 빌딩 운영 컨설팅</li>
+								<li>에너지 절약형 스마트 빌딩 구축 역량</li>																								
+							</ul>								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footerWrap">
+			<div id="footer">
+				<h2>footer영역</h2>
+				<div id="fText">
+					<div id="footerMenu">
+						<a href="http://www.ktestate.com/Company/Introduce/" title="회사소개">
+							<img src="img/footer/footer_txt01.png" alt="회사소개"/>
+						</a>
+						<img class="footerbar" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+						<a href="http://www.ktestate.com/Prove/" title="이용약관">
+							<img src="img/footer/footer_txt07.png" alt="이용약관"/>
+						</a>
+						<img class="footerbar" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+						<a href="http://www.ktestate.com/Privacy/" title="개인정보취급방침">
+							<img src="img/footer/footer_txt02.png" alt="개인정보취급방침"/>
+						</a>
+						<img class="footerbar" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+						<a href="http://www.ktestate.com/policy/" title="영상정보처리기기 운영 및 관리 방침">
+							<img src="img/footer/footer_txt06.png" alt="영상정보처리기기 운영 및 관리 방침"/>
+						</a>
+						<img class="footerbar" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+						<a href="#" title="이메일주소무단수집거부">
+							<img src="img/footer/footer_txt03.png" alt="이메일주소무단수집거부"/>
+						</a>
+						<img class="footerbar" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+						<a href="http://www.ktestate.com/Support/Qna/" title="고객문의">
+							<img src="img/footer/footer_txt04.png" alt="고객문의"/>
+						</a>
+						<img class="footerbar" src="img/footer/footer_bar01.gif" alt="푸터바"/>
+						<a href="http://www.ktestate.com/Support/Contact/" title="주요 연락처"><img src="img/footer/footer_txt05.png" alt="주요 연락처"/></a>
+					</div>
+					<div id="footerText">
+						<p>서울시 강남구 테헤란로 422 kt타워 17층<span> | </span>(주)케이티에스테이트 대표이사 : 최일성</p>
+						<p>Copyright &copy; 2014 by kt estate, LTD. All rights reserved.</p>
+					</div>
+				</div>
+				<div id="fSelect">
+					<div id="familySite">
+						<select id="familySelet">
+							<option value="familysite">Family site</option>
+							<option value="kt">kt</option>
+							<option value="ktds">ktds</option>
+							<option value="kth">kth</option>
+							<option value="ktlinkus">kt linkus</option>
+							<option value="ktsubmarine">kt submarine</option>
+							<option value="ktnetworks">kt networks</option>
+							<option value="ktcommerce">kt commerce</option>
+							<option value="ktrental">kt rental</option>
+							<option value="ktmhows">kt mhows</option>
+							<option value="kttelecop">kt telecop</option>
+							<option value="ktcapital">kt capital</option>
+							<option value="kttech">kt tech</option>
+							<option value="Sidus FNH">Sidus FNH</option>
+							<option value="nasmedia">nasmedia</option>
+						</select>
+					</div>
+					<div id="member">
+						<select id="memberSelect">
+							<option value="ktestate">kt estate 임직원용</option>
+							<option value="blue">BLUE(운영)</option>
+							<option value="bluemr">BLUE(MR조회)</option>
+							<option value="pmis">PMIS</option>
+							<option value="eps">EPS(업체용)</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>
